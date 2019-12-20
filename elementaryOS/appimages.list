@@ -1,0 +1,14 @@
+# This file should list the urls that AppImages should be downloaded from
+# The AppImages will be saved with their default name
+# AppImages will be "integrated" using AppImageLauncher
+
+# Plex Media Player (unofficial port)
+https://knapsu.eu/data/plex/latest
+
+# Yubico Authenticator
+https://developers.yubico.com/yubioath-desktop/Releases/yubioath-desktop-latest-linux.AppImage
+
+# Yubico Manager
+https://developers.yubico.com/yubikey-manager-qt/Releases/yubikey-manager-qt-latest-linux.AppImage
+
+

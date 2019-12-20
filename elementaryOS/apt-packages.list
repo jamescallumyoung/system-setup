@@ -1,0 +1,16 @@
+# This file should be just list packages to install with apt
+# Each package name should go on it's own line
+# Lines starting with # are comments
+
+# If a package needs a ppa to work, add it to the apt-ppas.list file
+# Every ppa in that file will be added before any packages listed here are installed
+
+appimagelauncher
+backintime-qt4
+firefox
+gnome-disk-utility
+
+# libre office (auto installs common parts)
+libreoffice-writer
+libreoffice-math
+

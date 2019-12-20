@@ -1,0 +1,7 @@
+# Packages listed in apt-packages.list sometimes need additional ppas
+#  list those ppas here
+
+# These ppas will ALL be added before ANY packages from that list are installed
+
+ ppa:bit-team/stable
+
