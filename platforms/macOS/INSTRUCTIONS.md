@@ -35,6 +35,12 @@ Install the packages brewfile with:
 brew bundle --file=mac.brewfile
 ```
 
+#### Alias GNU Packages
+
+Lots of the packages we just installed are GNU packages that will be prefixed with a "g" since macOS
+already ships with those packages (and we can't overwrite them any more). Our dotfiles automatically
+alias the prefixed versions but we'll want to do it manually if not using them.
+
 ### Apps Brewfile (optional)
 
 Next, install the apps brewfile *mac-apps.brewfile*.
@@ -73,36 +79,11 @@ Log into gitlab on another device (where we have the password stored) and use th
 Once logged in, go to *https://gitlab.com/profile/keys* and upload the public part fo our new ssh key. (*device-name_rsa.pub*, not *device-name_rsa*!)
 
 
-## Set up Pass
-
-We installed pass in the "Install Packages" step, but now we need to set it up.
-
-We need to do a few things:
-
-- Set up gpg to read our *pass@jamesyoung.ch* key from our Yubikey.
-- Initalize an empty pass store
-- Initalize the pass store as a git repo
-- Pull our passwords from gitlab
-
-### Set up gpg -- TODO
-
-### Set up the store
-
-We can initalize the pass store, and sync it with the git repo, with:
-
-```
-pass init pass@jamesyoung.ch
-pass git init 
-pass git remote add origin git@gitlab.com:jych/password-store.git
-pass git pull
-```
-
-
 ## Set up our dotfiles
 
 We use chezmoi for dotfile management. This allows us to create templates for custom dotfiles for each manchine. This is great since it lets us keep secrets off machines that don't need it, and also gets rid of any *if-else-fi* logic in the dotfiles themselves.
 
-We installed chezmoi in the "Innstall Packages" step earlier.
+We installed chezmoi in the "Install Packages" step earlier.
 
 ### Fetch our dotfiles
 
@@ -130,3 +111,4 @@ This will generate the dotfiles from the chezmoi templates, and place them in th
 To make sure macOS uses zsh as the login shell (the default shell to use in every teminal), do the following:
 
 [Apple Icon] > System Preferences > Users & Groups > *right click the user icon* > Advanced Options > *set Login shell to /bin/zsh*.
+
