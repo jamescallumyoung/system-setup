@@ -10,7 +10,9 @@ backintime-qt4
 # prefer firefox apt over snap as snap can't access yubikey
 firefox
 gnome-disk-utility
+lynx
 neovim
+pandoc
 snapd
 thefuck
 
