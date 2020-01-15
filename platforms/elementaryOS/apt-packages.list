@@ -7,9 +7,12 @@
 
 appimagelauncher
 backintime-qt4
+# prefer firefox apt over snap as snap can't access yubikey
 firefox
 gnome-disk-utility
+neovim
 snapd
+thefuck
 
 # stuff for libre office (auto installs common parts)
 libreoffice-writer
