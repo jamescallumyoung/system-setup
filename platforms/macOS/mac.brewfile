@@ -51,11 +51,12 @@ brew "zsh"
 # Others common linux tools
 brew "jq"
 
+# N.B. Replaced with 1password; we don't need pass any more
 # Pass & related tools
-brew "pass"
-brew "pass-update" # adds the `pass update` command to pass
-brew "pinentry"
-brew "pinentry-mac" # a decent (macOS native) pop-up dialog box for pinentry
+#brew "pass"
+#brew "pass-update" # adds the `pass update` command to pass
+#brew "pinentry"
+#brew "pinentry-mac" # a decent (macOS native) pop-up dialog box for pinentry
 
 ## Shell; zsh
 
