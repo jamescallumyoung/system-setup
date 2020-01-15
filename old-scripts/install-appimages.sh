@@ -22,7 +22,7 @@ echo "Downloading to $TMP_DIR...\n"
 echo "\nDownloaded:\n$(ls -U $TMP_DIR)\n"
 
 echo "Making all files in $TMP_DIR executable..."
-chmod -R +x "$TMP_DIR/"*
+chmod -R +x "$TMP_DIR"
 
 echo "Integrating all AppImages."
 cd $TMP_DIR

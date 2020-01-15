@@ -9,8 +9,14 @@ appimagelauncher
 backintime-qt4
 firefox
 gnome-disk-utility
+snapd
 
-# libre office (auto installs common parts)
+# stuff for libre office (auto installs common parts)
 libreoffice-writer
 libreoffice-math
 
+# stuff for ProtonVPN
+openvpn
+dialog
+python3-pip
+python3-setuptools

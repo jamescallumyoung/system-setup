@@ -1,0 +1,9 @@
+## Applications
+
+cask "firefox"
+cask "insomnia"
+cask "iTerm2"
+cask "sublime-text"
+cask "yubico-authenticator"
+cask "virtualbox"
+cask "docker" # docker desktop (docker for mac)

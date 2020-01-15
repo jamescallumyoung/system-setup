@@ -1,0 +1,94 @@
+## Install GNU/Linux Tools
+
+# Any of the GNU tools that are alredy installed on macOS will be prefixed with "g"
+# i.e. gawk -> ggawk
+
+# core
+brew "coreutils"
+
+# key commands
+brew "binutils"
+brew "diffutils"
+brew "ed"
+brew "findutils"
+brew "gawk"
+brew "gnu-indent"
+brew "gnu-sed"
+brew "gnu-tar"
+brew "gnu-which"
+brew "gnutls"
+brew "grep"
+brew "gzip"
+brew "screen"
+brew "watch"
+brew "wdiff"
+brew "wget"
+
+# macOS ships a GNU version, but it's too old
+brew "bash"
+brew "emacs"
+brew "gdb" # gdb requires further actions to make it work. See `brew info gdb`.
+brew "gnupg"
+brew "gpatch"
+brew "m4"
+brew "make"
+brew "nano"
+
+# macOS ships a non-GNU version, but it's too old
+brew "file-formula"
+brew "git"
+brew "less"
+brew "openssh"
+brew "perl518" # no longer needs to tap "homebrew/versions"
+brew "python"
+brew "rsync"
+brew "svn"
+brew "unzip"
+brew "vim"
+brew "macvim"
+brew "zsh"
+
+# Others common linux tools
+brew "jq"
+
+# Pass & related tools
+brew "pass"
+brew "pass-update" # adds the `pass update` command to pass
+brew "pinentry"
+brew "pinentry-mac" # a decent (macOS native) pop-up dialog box for pinentry
+
+## Shell; zsh
+
+# zsh ! ships with macOS; we replaced it earlier
+brew "antigen" # package manager for zsh
+
+## chezmoi
+
+tap "twpayne/taps"
+brew "twpayne/taps/chezmoi" # dotfile tools
+
+## Editors
+
+brew "neovim"
+
+## Languages
+
+# Python
+# 2.x ! ships with macOS; we replaced it earlier
+brew "python3" # 3.x
+
+# Java
+tap "adoptopenjdk/openjdk" # needed for OpenJDK versions
+cask "adoptopenjdk/openjdk/adoptopenjdk8" # 8
+cask "adoptopenjdk/openjdk/adoptopenjdk11" # 11
+cask "adoptopenjdk/openjdk/adoptopenjdk12" # 12
+cask "java" # latest
+brew "jenv" # java version manager; like nvm
+
+# Node
+# nvm ! installed with Antigen instead
+brew "yarn"
+
+# Go
+brew "go"
+
