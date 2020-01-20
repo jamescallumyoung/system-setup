@@ -15,6 +15,7 @@ neovim
 pandoc
 snapd
 thefuck
+zsh-antigen
 
 # stuff for libre office (auto installs common parts)
 libreoffice-writer
