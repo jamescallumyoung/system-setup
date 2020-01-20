@@ -1,0 +1,7 @@
+# This file is only for snaps that require the --classic flag.
+# None --classic snaps should be listed in snaps.list.
+chezmoi
+# vs code;
+code
+skype
+slack
