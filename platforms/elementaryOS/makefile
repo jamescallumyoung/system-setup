@@ -22,6 +22,7 @@
 PPAFILE := apt-ppas.list
 APTFILE := apt-packages.list
 SNAPFILE := snaps.list
+SNAPCLASSICFILE := snaps-classic.list
 
 # Default target:
 none:
@@ -29,10 +30,11 @@ none:
 
 # Basic targets:
 list:
-	@echo "APT PACKAGES:"
+	@tput setaf 2;echo "APT PACKAGES:"; tput sgr0
 	@readlist ${APTFILE}
-	@echo "SNAPS:"
+	@tput setaf 2;echo "SNAPS:"; tput sgr0
 	@readlist ${SNAPFILE}
+	@readlist ${SNAPCLASSICFILE}
 
 install: install-packages install-snaps
 
@@ -64,6 +66,6 @@ pt-install-regular-snaps:
 
 pt-install-classic-snaps:
 	@echo "Adding snaps..."
-	@readlist ${SNAPFILE} | xargs -n 1 -I '{}' sudo snap install '{}' --classic
+	@readlist ${SNAPCLASSICFILE} | xargs -n 1 -I '{}' sudo snap install '{}' --classic
 	@echo "...done!"
 
