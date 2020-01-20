@@ -39,10 +39,7 @@ install: install-packages install-snaps
 # Advanced targets:
 install-packages: pt-prepare-apt pt-install-ppas pt-install-apts
 
-install-snaps:
-	@echo "Adding snaps..."
-	@readlist ${SNAPFILE} | xargs -n 1 -I '{}' sudo snap install '{}'
-	@echo "...done!"
+install-snaps: pt-install-regular-snaps pt-install-classic-snaps
 
 # The following should not be run directly
 # (they are part of other targets)
@@ -59,3 +56,14 @@ pt-install-apts:
 	@echo "Adding packages..."
 	@readlist ${APTFILE} | xargs -n 1 -I '{}' sudo apt install -qq -y '{}'
 	@echo "...done!"
+
+pt-install-regular-snaps:
+	@echo "Adding snaps..."
+	@readlist ${SNAPFILE} | xargs -n 1 -I '{}' sudo snap install '{}'
+	@echo "...done!"
+
+pt-install-classic-snaps:
+	@echo "Adding snaps..."
+	@readlist ${SNAPFILE} | xargs -n 1 -I '{}' sudo snap install '{}' --classic
+	@echo "...done!"
+
