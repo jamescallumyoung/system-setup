@@ -3,5 +3,7 @@
 chezmoi
 # vs code;
 code
+# GitHub cli (aliasd as git in dotfiles)
+hub
 skype
 slack
