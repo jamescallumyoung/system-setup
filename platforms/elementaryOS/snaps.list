@@ -1,3 +1,4 @@
 # Snaps installed with the --classic flag are listed in snaps-classic.list
 #firefox # installed with apt since snap version cannot use yubikey
+insomnia
 vlc
