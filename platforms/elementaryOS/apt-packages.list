@@ -5,6 +5,12 @@
 # If a package needs a ppa to work, add it to the apt-ppas.list file
 # Every ppa in that file will be added before any packages listed here are installed
 
+# These are needed to allow apt to download packages over https
+# by defauls, it uses http
+software-properties-common
+ca-certificates
+apt-transport-https
+
 appimagelauncher
 backintime-qt4
 # prefer firefox apt over snap as snap can't access yubikey
