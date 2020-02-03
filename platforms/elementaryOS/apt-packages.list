@@ -33,3 +33,8 @@ openvpn
 dialog
 python3-pip
 python3-setuptools
+
+# stuff for docker
+docker-ce
+docker-ce-cli
+containerd.io

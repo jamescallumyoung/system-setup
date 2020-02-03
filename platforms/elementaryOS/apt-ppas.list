@@ -3,5 +3,5 @@
 
 # These ppas will ALL be added before ANY packages from that list are installed
 
- ppa:bit-team/stable
-
+ppa:bit-team/stable
+"deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
