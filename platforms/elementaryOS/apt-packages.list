@@ -15,6 +15,7 @@ appimagelauncher
 backintime-qt4
 # prefer firefox apt over snap as snap can't access yubikey
 firefox
+git-extras
 gnome-disk-utility
 lynx
 maven
