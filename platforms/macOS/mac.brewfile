@@ -48,19 +48,14 @@ brew "vim"
 brew "macvim"
 brew "zsh"
 
-# Others common linux tools
+# Others linux tools
 brew "jq"
-
-# N.B. Replaced with 1password; we don't need pass any more
-# Pass & related tools
-#brew "pass"
-#brew "pass-update" # adds the `pass update` command to pass
-#brew "pinentry"
-#brew "pinentry-mac" # a decent (macOS native) pop-up dialog box for pinentry
+brew "bat" # a cat clone with wings ; https://github.com/sharkdp/bat
+brew "fd" # a sensible alternative to find ; https://github.com/sharkdp/fd
 
 ## Shell; zsh
 
-# zsh ! ships with macOS; we replaced it earlier
+#zsh # ships with macOS; we replaced it earlier
 brew "antigen" # package manager for zsh
 
 ## chezmoi
@@ -80,16 +75,16 @@ brew "python3" # 3.x
 
 # Java
 tap "adoptopenjdk/openjdk" # needed for OpenJDK versions
-cask "adoptopenjdk/openjdk/adoptopenjdk8" # 8
-cask "adoptopenjdk/openjdk/adoptopenjdk11" # 11
+#cask "adoptopenjdk/openjdk/adoptopenjdk8" # 8
+#cask "adoptopenjdk/openjdk/adoptopenjdk11" # 11
 cask "adoptopenjdk/openjdk/adoptopenjdk12" # 12
-cask "java" # latest
+#cask "java" # latest
 brew "jenv" # java version manager; like nvm
 
 # Node
 # nvm ! installed with Antigen instead
-brew "yarn"
+#brew "yarn"
 
 # Go
-brew "go"
+#brew "go"
 
