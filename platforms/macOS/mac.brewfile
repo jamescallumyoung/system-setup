@@ -52,6 +52,12 @@ brew "zsh"
 brew "jq"
 brew "bat" # a cat clone with wings ; https://github.com/sharkdp/bat
 brew "fd" # a sensible alternative to find ; https://github.com/sharkdp/fd
+brew "pick" # a cli picker ; https://github.com/mptre/pick
+
+# Git tools
+brew "github/gh/gh"
+brew "hub"
+brew "git-extras"
 
 ## Shell; zsh
 

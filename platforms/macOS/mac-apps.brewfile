@@ -4,7 +4,7 @@ cask "firefox"
 cask "insomnia"
 cask "iTerm2"
 cask "sublime-text"
-cask "yubico-authenticator"
+#cask "yubico-authenticator"
 cask "virtualbox"
 cask "docker" # docker desktop (docker for mac)
 cask "nightowl" # dark/light theme switcher
@@ -12,3 +12,6 @@ cask "keka" # archiver/unarchiver
 cask "browserosaurus" # browser link selector
 cask "vanilla" # free alt to butler ; hides items in the menu
 cask "rocket" # slack-style emoji picker
+cask "alfred"
+cask "rectangle"
+cask "visual-studio-code"
